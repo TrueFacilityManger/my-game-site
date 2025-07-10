@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Моя Игра</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="game.js" defer></script>
+</head>
+<body>
+  <h1>Добро пожаловать в игру!</h1>
+  <canvas id="gameCanvas" width="800" height="600" style="border:1px solid black;"></canvas>
+
+  <div>
+    <input id="name" placeholder="Имя">
+    <input id="score" placeholder="Очки" type="number">
+    <button onclick="submitScore()">Отправить</button>
+  </div>
+
+  <h2>Таблица лидеров:</h2>
+  <ul id="leaderboard"></ul>
+</body>
+</html>

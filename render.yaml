@@ -1,0 +1,11 @@
+services:
+  - type: web
+    name: my-game-backend
+    env: python
+    buildCommand: "pip install -r backend/requirements.txt"
+    startCommand: "python backend/main.py"
+    plan: free
+
+  - type: static
+    name: my-game-frontend
+    staticPublishPath: frontend
